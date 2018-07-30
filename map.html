@@ -19,6 +19,13 @@
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
   
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css"
+      integrity="sha512-M2wvCLH6DSRazYeZRIm1JnYyh22purTM+FDB5CsyxtQJYeKq83arPe5wgbNmcFXGqiSH2XR8dT/fJISVA1r/zQ=="
+      crossorigin=""/>
+<!-- https://github.com/smeijer/leaflet-geosearch/issues/126 -->
+<!--    <link rel="stylesheet" href="https://unpkg.com/leaflet-geosearch@2.5.1/dist/style.css"/> -->
+    <link rel="stylesheet" href="assets/leaflet.css"/>
+    <link rel="stylesheet" href="assets/map.css"/>
   
   
 </head>
@@ -67,8 +74,15 @@
     <div class="container">
         <div class="media-container-row">
             <div class="col-md-8">
-                <div class="google-map"><iframe frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0Dx_boXQiwvdz8sJHoYeZNVTdoWONYkU&amp;q=place_id:ChIJn6wOs6lZwokRLKy1iqRcoKw" allowfullscreen=""></iframe></div>
-        </div>
+               <div id="map"></div>
+    <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"
+      integrity="sha512-lInM/apFSqyy1o6s89K4iQUKg6ppXEgsVxT35HbzUupEVRh2Eu9Wdl4tHj7dZO0s1uvplcYGmt3498TtHq+log=="
+      crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet-geosearch@2.5.1/dist/bundle.min.js"></script>
+    <script src="configuration.js"></script>
+    <script src="assets/overpass.js"></script>
+    </div>
+          
     </div>
 </div></section>
 
@@ -93,6 +107,8 @@
                 </p>
             </div>
         </div>
+      
+      
         <div class="footer-lower">
             <div class="media-container-row">
                 <div class="col-md-12">
